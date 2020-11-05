@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* main */
+.conteiner {
+	width: 960px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/* section */
+.row {
+	margin-bottom: 10px;
+}
+
+.box {
+	display: inline-block;
+	position: relative;
+}
+
+.sconto {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: green;
+}
+
+.box:nth-child(even) .sconto {
+	background: red;
+}
+
+.heart {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: red;
+}
+
+.box:hover .heart {
+	display: block;
+}
